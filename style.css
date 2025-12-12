@@ -1,0 +1,148 @@
+body {
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 20px;
+    background: #6fbac7;
+    color: #1f2a2f;
+}
+
+header {
+    text-align: center;
+    background: #8175d6; 
+    padding: 15px 0;
+    border: 3px solid #3a8892;
+    box-shadow: 3px 3px #ffffff inset, -3px -3px #3a8892 inset;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #f0f0ff;
+}
+
+nav {
+    margin-top: 10px;
+
+}
+
+nav a {
+    display: inline-block;
+    margin: 3px;
+    padding: 8px 14px;
+    background: #dcd5ff;
+    border: 3px outset #ffffff;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #f5e6f4;
+    border-style: inset;
+}
+
+section {
+    background: #eef5ff; 
+    border: 3px solid #8175d6;
+    margin: 25px auto;
+    padding: 20px;
+    width: 95%;
+    max-width: 1200px;
+    position: relative;
+
+    background-image:
+        repeating-linear-gradient(90deg,
+            rgba(111,186,199,0.2) 0px,
+            rgba(111,186,199,0.2) 6px,
+            transparent 6px,
+            transparent 12px),
+        repeating-linear-gradient(0deg,
+            rgba(129,117,214,0.2) 0px,
+            rgba(129,117,214,0.2) 6px,
+            transparent 6px,
+            transparent 12px);
+}
+
+section h2 {
+    background: #3a8892;
+    color: #ffffff;
+    padding: 5px 12px;
+    margin: -20px -20px 15px -20px;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #142e33;
+}
+
+section h2 .title-text {
+    font-weight: bold;
+}
+
+.title-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.title-buttons span {
+    width: 22px;
+    height: 20px;
+    background: #dcd5ff;
+    border: 3px outset #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.title-buttons span:hover {
+    background: #f5e6f4;
+    border-style: inset;
+}
+
+section p,
+section ul,
+section article {
+    background: #ffffff;
+    padding: 10px;
+    border: 2px solid #8175d6;
+    box-shadow: inset 1px 1px #ffffff;
+}
+
+img {
+    border: 2px solid #3a8892;
+    background: #fff;
+    padding: 4px;
+    margin: 8px;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 3px inset #fff;
+    background: #f5faff;
+    font-family: "Courier New", monospace;
+}
+
+button {
+    font-family: "Courier New", monospace;
+    padding: 6px 14px;
+    background: #dcd5ff;
+    border: 3px outset #fff;
+    cursor: pointer;
+}
+button:hover {
+    border-style: inset;
+}
+
+footer {
+    background: #8175d6;
+    padding: 10px;
+    border-top: 3px solid #3a8892;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 3px 3px #ffffff inset, -3px -3px #3a8892 inset;
+}
