@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jennifer Mezo Portfolio - Projects</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<audio id="click-sound">
+  <source src="clicky.mp3" type="audio/mp3">
+</audio>
+
+<header>
+  <h1>Jennifer Mezo</h1>
+  <nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="resume.html">Resume</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<section id="projects">
+  <h2>
+    <span class="title-text">Projects</span>
+    <div class="title-buttons">
+      <span>–</span>
+      <span>☐</span>
+      <span>×</span>
+    </div>
+  </h2>
+  <p>Here are some of my animation and photography projects:</p>
+  <img src="images/walk.gif" alt="walk" width="560">
+  <img src="images/band.jpg" alt="band" width="500">
+
+</section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Jennifer Mezo</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const yearSpan = document.getElementById("year");
+    if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+});
+
+const clickSound = document.getElementById("click-sound");
+document.querySelectorAll("button, a, .title-buttons span").forEach(el => {
+    el.addEventListener("click", () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    });
+});
+</script>
+
+</body>
+</html>

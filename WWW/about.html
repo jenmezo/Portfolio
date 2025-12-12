@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jennifer Mezo Portfolio - About</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<audio id="click-sound">
+  <source src="clicky.mp3" type="audio/mp3">
+</audio>
+
+<header>
+  <h1>Jennifer Mezo</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="resume.html">Resume</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="about">
+  <h2>
+    <span class="title-text">About</span>
+    <div class="title-buttons">
+      <span>–</span>
+      <span>☐</span>
+      <span>×</span>
+    </div>
+  </h2>
+  <p>I am passionate about animation, art, photography, music, theater, and marching band visuals. I love creating with a limited color palette, with each piece of art having a story of its own.</p>
+  <img src="images/Illustration.jpg" alt="Illustration" width="350">
+  <img src="images/pill.jpeg" alt="pill" width="300">
+  <img src="images/hands.jpeg" alt="hands" width="300">
+  <img src="images/clue.jpeg" alt="clue" width="350">
+  <img src="images/field.jpg" alt="field" width="350">
+  <img src="images/lighthouse.jpeg" alt="lighthouse" width="350">
+</section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Jennifer Mezo</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const yearSpan = document.getElementById("year");
+    if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+});
+
+const clickSound = document.getElementById("clicky");
+document.querySelectorAll("button, a, .title-buttons span").forEach(el => {
+    el.addEventListener("click", () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    });
+});
+</script>
+
+</body>
+</html>
